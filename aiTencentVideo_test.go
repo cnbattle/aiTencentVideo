@@ -10,7 +10,7 @@ import (
 )
 
 func TestGetVideoUrlForVid(t *testing.T) {
-	vid:= "k0912t1gqas"
+	vid := "k0912t1gqas"
 	originUrl := "http://vv.video.qq.com/getinfo?vids=%v&platform=101001&charge=0&otype=json&defn=shd"
 	resp, err := http.Get(fmt.Sprintf(originUrl, vid))
 	if err != nil {
